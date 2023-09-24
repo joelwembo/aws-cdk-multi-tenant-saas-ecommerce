@@ -57,3 +57,9 @@ Description
 Api Key used for Api Gateway YouTube tutorial
 Enabled
 Enabled 
+
+# Kafka
+Apache Kafka is a distributed event store and stream-processing platform. It is an open-source system developed by the Apache Software Foundation written in Java and Scala. The project aims to provide a unified, high-throughput, low-latency platform for handling real-time data feeds.
+# API Gateway
+An application programming interface (API) gateway is software that takes an application user's request, routes it to one or more backend services, gathers the appropriate data and delivers it to the user in a single, combined package.
+
