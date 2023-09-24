@@ -1,8 +1,12 @@
-# Welcome to your CDK TypeScript project
+# Welcome to your CDK TypeScript Lambda,  DynamoDB and API Gateway
+
+AWS CDK Infra with Terraform , CloudFormation, VPC, Typescript, DynamoDB, Postgres, Kafka and API Gateway
 
 This is a blank project for CDK development with TypeScript.
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
+
+![image](https://github.com/joelwembo/aws-cdk-infra-poc-1/assets/19718580/172f05c7-3c8f-4e2a-8567-b33fdf660d31)
 
 ## Useful commands
 
