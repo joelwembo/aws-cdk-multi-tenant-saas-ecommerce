@@ -1,4 +1,6 @@
-# AWS CDK Restful APIs with Typescript API Gateway DynamoDB
+# AWS CDK Restful APIs using API Gateway,  Lambda, RDS PostgreSQL, DynamoDB, VPC, Codepipeline and Terraform
+
+This Proof of Concept is about a Restful APIs using AWS CDK  Infrastructure  with Terraform , CloudFormation, VPC, Typescript, DynamoDB, PostgreSQL, AWS EventBridge,  AWS CodePipeline, AWS SQS/SNS, Kafka and API Gateway.
 
 ## Tools
 You will need the following tools:
@@ -9,7 +11,9 @@ You will need the following tools:
 * NodeJS Typescript
 * AWS CDK Toolkit
 * Docker
-
+* CDKT
+* Kafka
+* Postman
 
 ## Useful commands
 npm run build compile typescript to js
@@ -53,11 +57,18 @@ cdk synth emits the synthesized CloudFormation template
 aws apigateway get-api-key --api-key API_KEY_ID --include-value
 
 # OutPut Report / Result
-   Deployment time: 185.51s
 
-* **Product API -> https://xxx**
-* **Basket API -> https://xxx.**
-* **Ordering API -> https://xxx.**
+✨  Deployment time: 96.82s
+
+Outputs: AwsCloudappStack
+
+AwsCloudappStack.ApiGatewaybasketApiEndpointEA878E69 = https://u1jtnat30j.execute-api.ap-southeast-1.amazonaws.com/prod/
+AwsCloudappStack.ApiGatewayorderApiEndpointAA9C4874 = https://rjx12rx44h.execute-api.ap-southeast-1.amazonaws.com/prod/
+AwsCloudappStack.ApiGatewayproductApiEndpoint84A1AEAC = https://6ajn8nqb08.execute-api.ap-southeast-1.amazonaws.com/prod/
+Stack ARN:
+arn:aws:cloudformation:ap-southeast-1:604020082473:stack/AwsCloudappStack/f5adca00-61e0-11ee-a748-028014dc3484
+
+✨  Total time: 137.35s
 
 # Fore more information read:
  
@@ -66,4 +77,5 @@ aws apigateway get-api-key --api-key API_KEY_ID --include-value
  
  - Linkedin: https://www.linkedin.com/in/joelotepawembo/
  
+
 
