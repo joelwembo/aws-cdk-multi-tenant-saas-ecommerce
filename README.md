@@ -49,6 +49,8 @@ npm install --save  @aws-cdk/aws-lambda
 npm install --save  @aws-cdk/aws-dynamodb
 
 ## AWS Codepipeline
+![image](https://github.com/joelwembo/aws-cdk-infra-poc-1/assets/19718580/d97d25fc-76f1-4804-be0f-ea95a9d2a7fc)
+
 
 - Create Github access token with permissions level ( Admin, webhooks, code editions,...)
 - add the github access token to aws secret manager with same name
