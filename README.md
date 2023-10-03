@@ -73,12 +73,15 @@ arn:aws:cloudformation:ap-southeast-1:604020082473:stack/AwsCloudappStack/f5adca
 
 ✨  Total time: 137.35s
 
-# Fore more information read:
+# Fore more information Read:
  
 - How to Setup SAM & Cloud Formation : https://medium.com/@joelotepawembo/how-to-build-lambda-based-rest-api-entirely-through-code-api-gateway-sam-terraform-b9c83d76ea1c
 - AWS CDK Restful APIs with Typescript API Gateway DynamoDB: https://medium.com/@joelotepawembo/how-to-build-lambda-based-rest-api-entirely-through-code-api-gateway-sam-terraform-b9c83d76ea1c
  
- - Linkedin: https://www.linkedin.com/in/joelotepawembo/
- 
+ - Author : JOEL O. WEMBO
+- Linkedin: https://www.linkedin.com/in/joelotepawembo/
+- Twitter: https://twitter.com/joelwembo1
+- Website: https://joelwembo.com
+
 
 
