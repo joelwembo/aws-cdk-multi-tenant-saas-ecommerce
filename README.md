@@ -2,6 +2,7 @@
 
 This Proof of Concept is about a Restful APIs using AWS CDK  Infrastructure  with Terraform , CloudFormation, VPC, Typescript, DynamoDB, PostgreSQL, AWS EventBridge,  AWS CodePipeline, AWS SQS/SNS, Kafka and API Gateway.
 ![architecture-1](https://github.com/joelwembo/aws-cdk-infra-poc-1/assets/19718580/ccb09c1a-5cec-4eea-b8cc-22a94f3b82e9)
+AWS CDK Serverless Microservices Architecture
 
 
 
