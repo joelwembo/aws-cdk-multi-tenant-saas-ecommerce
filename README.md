@@ -1,6 +1,8 @@
 # AWS CDK Restful APIs using API Gateway,  Lambda, RDS PostgreSQL, DynamoDB, VPC, Codepipeline and Terraform
 
 This Proof of Concept is about a Restful APIs using AWS CDK  Infrastructure  with Terraform , CloudFormation, VPC, Typescript, DynamoDB, PostgreSQL, AWS EventBridge,  AWS CodePipeline, AWS SQS/SNS, Kafka and API Gateway.
+![Uploading architecture-1.png…]()
+
 
 ## Tools
 You will need the following tools:
@@ -53,6 +55,8 @@ npm install --save  @aws-cdk/aws-dynamodb
 - Create Github AWS Environment Secrets  
       - Github --> Settings --> Actions --> new env
 
+## Event Bridge
+![image](https://github.com/joelwembo/aws-cdk-infra-poc-1/assets/19718580/883f86d5-a6e3-4330-b2de-c7704341d624)
 
 # For RDS and API Gateway
  Create RDS Role by creating secret keys
