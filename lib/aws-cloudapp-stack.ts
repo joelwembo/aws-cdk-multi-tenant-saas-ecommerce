@@ -6,7 +6,7 @@ import { SwnEventBus } from './eventbus';
 import { SwnMicroservices } from './microservice';
 import { SwnQueue } from './queue';
 
-export class AwsMicroservicesStack extends Stack {
+export class AwsCloudappStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 

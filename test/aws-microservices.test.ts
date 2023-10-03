@@ -7,7 +7,7 @@
 test('SQS Queue Created', () => {
 //   const app = new cdk.App();
 //     // WHEN
-//   const stack = new AwsMicroservices.AwsMicroservicesStack(app, 'MyTestStack');
+//   const stack = new AwsMicroservices.AwsCloudappStack(app, 'MyTestStack');
 //     // THEN
 //   const template = Template.fromStack(stack);
 

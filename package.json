@@ -1,9 +1,10 @@
 {
-  "name": "aws-microservices",
+  "name": "aws-cdk-infra-poc",
   "version": "0.1.0",
   "bin": {
     "aws-microservices": "bin/aws-microservices.js"
   },
+  "author": "Joel Otepa Wembo",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
