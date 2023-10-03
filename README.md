@@ -55,6 +55,15 @@ aws apigateway get-api-key --api-key API_KEY_ID --include-value
 # OutPut Report / Result
    Deployment time: 185.51s
 
+* **Product API -> https://xxx**
+* **Basket API -> https://xxx.**
+* **Ordering API -> https://xxx.**
 
-
+# Fore more information read:
+ 
+- How to Setup SAM & Cloud Formation : https://medium.com/@joelotepawembo/how-to-build-lambda-based-rest-api-entirely-through-code-api-gateway-sam-terraform-b9c83d76ea1c
+- AWS CDK Restful APIs with Typescript API Gateway DynamoDB: https://medium.com/@joelotepawembo/how-to-build-lambda-based-rest-api-entirely-through-code-api-gateway-sam-terraform-b9c83d76ea1c
+ 
+ - Linkedin: https://www.linkedin.com/in/joelotepawembo/
+ 
 
