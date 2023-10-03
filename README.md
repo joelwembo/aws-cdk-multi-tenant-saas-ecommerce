@@ -39,8 +39,13 @@ cdk synth emits the synthesized CloudFormation template
 
  - npx cdk deploy --require-approval never --method=direct  --no-previous-parameters --profile=default --verbose --outputs-file ./cdk-outputs.json
 
+# You can also install modules individually
 
- # AWS Codepipeline
+npm install --save @aws-cdk/aws-apigateway
+npm install --save  @aws-cdk/aws-lambda
+npm install --save  @aws-cdk/aws-dynamodb
+
+## AWS Codepipeline
 
 - Create Github access token with permissions level ( Admin, webhooks, code editions,...)
 - add the github access token to aws secret manager with same name
