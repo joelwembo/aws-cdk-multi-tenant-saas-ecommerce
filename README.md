@@ -62,9 +62,12 @@ aws apigateway get-api-key --api-key API_KEY_ID --include-value
 
 Outputs: AwsCloudappStack
 
-AwsCloudappStack.ApiGatewaybasketApiEndpointEA878E69 = https://u1jtnat30j.execute-api.ap-southeast-1.amazonaws.com/prod/
-AwsCloudappStack.ApiGatewayorderApiEndpointAA9C4874 = https://rjx12rx44h.execute-api.ap-southeast-1.amazonaws.com/prod/
-AwsCloudappStack.ApiGatewayproductApiEndpoint84A1AEAC = https://6ajn8nqb08.execute-api.ap-southeast-1.amazonaws.com/prod/
+- AwsCloudappStack.ApiGatewaybasketApiEndpointEA878E69 = https://u1jtnat30j.execute-api.ap-southeast-1.amazonaws.com/prod/
+
+- AwsCloudappStack.ApiGatewayorderApiEndpointAA9C4874 = https://rjx12rx44h.execute-api.ap-southeast-1.amazonaws.com/prod/
+
+- AwsCloudappStack.ApiGatewayproductApiEndpoint84A1AEAC = https://6ajn8nqb08.execute-api.ap-southeast-1.amazonaws.com/prod/
+
 Stack ARN:
 arn:aws:cloudformation:ap-southeast-1:604020082473:stack/AwsCloudappStack/f5adca00-61e0-11ee-a748-028014dc3484
 
