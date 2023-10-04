@@ -1,9 +1,8 @@
-# AWS CDK Restful APIs using API Gateway,  Lambda, RDS PostgreSQL, DynamoDB, VPC, Codepipeline and Terraform
+# AWS CDK Restful APIs using API Gateway, Lambda, RDS PostgreSQL, DynamoDB, VPC, Codepipeline and Terraform
 
 This Proof of Concept is about a Restful APIs using AWS CDK  Infrastructure  with Terraform , CloudFormation, VPC, Typescript, DynamoDB, PostgreSQL, AWS EventBridge,  AWS CodePipeline, AWS SQS/SNS, Kafka and API Gateway.
 ![architecture-1](https://github.com/joelwembo/aws-cdk-infra-poc-1/assets/19718580/ccb09c1a-5cec-4eea-b8cc-22a94f3b82e9)
                                    AWS CDK Serverless Microservices Architecture
-
 
 
 ## Tools
@@ -33,7 +32,7 @@ cdk synth emits the synthesized CloudFormation template
 2. cdk diff
 3. Bootstrap
 - export CDK_NEW_BOOTSTRAP=1
-- npx cdk bootstrap --trust=604020082473 aws://604020082473/ap-southeast-1 --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess aws://604020082473/ap-southeast-1 --verbose --profile=default
+- npx cdk bootstrap --trust=xxxxxxxxxx aws://xxxxxxxxxx/ap-southeast-1 --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess aws://xxxxxxxxxx/ap-southeast-1 --verbose --profile=default
   
 3. cdk synth
 
@@ -82,7 +81,7 @@ Outputs: AwsCloudappStack
 - AwsCloudappStack.ApiGatewayproductApiEndpoint84A1AEAC = https://6ajn8nqb08.execute-api.ap-southeast-1.amazonaws.com/prod/
 
 Stack ARN:
-arn:aws:cloudformation:ap-southeast-1:604020082473:stack/AwsCloudappStack/f5adca00-61e0-11ee-a748-028014dc3484
+arn:aws:cloudformation:ap-southeast-1:xxxxxxxxxx:stack/AwsCloudappStack/f5adca00-61e0-11ee-a748-028014dc3484
 
 ✨  Total time: 137.35s
 
