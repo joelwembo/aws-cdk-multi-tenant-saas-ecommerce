@@ -15,10 +15,9 @@ export class SwnQueue extends Construct {
     constructor(scope: Construct, id: string, props: SwnQueueProps) {
         super(scope, id);
 
-      //queue
       this.orderQueue = new Queue(this, 'OrderQueue', {
         queueName : 'OrderQueue',
-        visibilityTimeout: Duration.seconds(30) // default value
+        visibilityTimeout: Duration.seconds(30) 
       });
       
       props.consumer.addEventSource(new SqsEventSource(this.orderQueue, {

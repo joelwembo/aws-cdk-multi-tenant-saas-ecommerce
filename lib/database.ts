@@ -11,16 +11,12 @@ export class SwnDatabase extends Construct {
     constructor(scope: Construct, id: string) {
         super(scope, id);
       
-         //product table
          this.productTable = this.createProductTable();
-         //basket table
          this.basketTable = this.createBasketTable();
-         //order table
          this.orderTable = this.createOrderTable(); 
     }
 
-    // Product DynamoDb Table Creation
-    // product : PK: id -- name - description - imageFile - price - category
+   
     private createProductTable() : ITable {
       const productTable = new Table(this, 'product', {
         partitionKey: {
@@ -34,10 +30,7 @@ export class SwnDatabase extends Construct {
       return productTable;
     }
 
-    // Basket DynamoDb Table Creation
-        // basket : PK: userName -- items (SET-MAP object) 
-          // item1 - { quantity - color - price - productId - productName }
-          // item2 - { quantity - color - price - productId - productName }
+  
     private createBasketTable() : ITable {
       const basketTable = new Table(this, 'basket', {
         partitionKey: {
@@ -51,8 +44,7 @@ export class SwnDatabase extends Construct {
       return basketTable;
     }
 
-    // Order DynamoDb Table Creation
-    // order : PK: userName - SK: orderDate -- totalPrice - firstName - lastName - email - address - paymentMethod - cardInfo
+   
     private createOrderTable() : ITable {
       const orderTable = new Table(this, 'order', {
           partitionKey: {
