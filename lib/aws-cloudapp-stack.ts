@@ -1,4 +1,3 @@
-
 import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as iam from 'aws-cdk-lib/aws-iam';
@@ -15,8 +14,6 @@ import { SwnDatabase } from './database';
 import { SwnEventBus } from './eventbus';
 import { SwnMicroservices } from './microservice';
 import { SwnQueue } from './queue';
-
-
 
 
 export class AwsCloudappStack extends Stack {
@@ -150,9 +147,31 @@ export class AwsCloudappStack extends Stack {
     const instantiate = createResolver('instantiate', 'src/instantiate.ts');
     instantiate.node.addDependency(rdsInstance);
 
-
-    
-
+      // Lambda function for adding a book in the RDS table.
+      const addBook = createResolver('add-book', 'src/addBook.ts');
+      addBook.node.addDependency(rdsInstance);
+  
+      // Lambda function for gettings books in the RDS table.
+      const getBooks = createResolver('get-books', 'src/getBooks.ts');
+      getBooks.node.addDependency(rdsInstance);
+  
+      // Custom Resource to execute instantiate function.
+      const customResource = new cr.AwsCustomResource(this, 'TriggerInstantiate', {
+        functionName: 'trigger-instantiate',
+        role,
+        onUpdate: {
+          service: 'Lambda',
+          action: 'invoke',
+          parameters: {
+            FunctionName: instantiate.functionName,
+          },
+          physicalResourceId: cr.PhysicalResourceId.of('TriggerInstantiate'),
+        },
+        policy: cr.AwsCustomResourcePolicy.fromSdkCalls({
+          resources: [instantiate.functionArn],
+        }),
+      });
+      customResource.node.addDependency(instantiate)
 
     // DynamoDB Database Table Provisionning
     const database = new SwnDatabase(this, 'Database');    
