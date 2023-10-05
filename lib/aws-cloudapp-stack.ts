@@ -6,6 +6,8 @@ import * as secrets from 'aws-cdk-lib/aws-secretsmanager';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as nodejs from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as cr from 'aws-cdk-lib/custom-resources';
+// import * as path from "path";
+// import * as fs from "fs";
 
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
@@ -15,6 +17,10 @@ import { SwnEventBus } from './eventbus';
 import { SwnMicroservices } from './microservice';
 import { SwnQueue } from './queue';
 
+
+export interface ApplicationProps extends StackProps {
+  environment: string;
+}
 
 export class AwsCloudappStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
