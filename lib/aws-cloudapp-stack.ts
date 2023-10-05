@@ -120,7 +120,7 @@ export class AwsCloudappStack extends Stack {
     rdsInstance.secret?.grantRead(role)
 
     // Secrets for database credentials.
-    const credentials = secrets.Secret.fromSecretCompleteArn(this, 'CredentialsSecret' , '')
+    const credentials = secrets.Secret.fromSecretCompleteArn(this, 'CredentialsSecret' , 'arn:aws:secretsmanager:ap-southeast-1:xxxxxxxxxxxxx:secret:rds-db-creds-Zek0Nj')
     credentials.grantRead(role)
 
     // Returns function to connect with RDS instance.
