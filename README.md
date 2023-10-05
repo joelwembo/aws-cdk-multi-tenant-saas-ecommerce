@@ -12,7 +12,7 @@ You will need the following tools:
 * AWS Account and User
 * AWS CLI
 * NodeJS Typescript
-* AWS CDK Toolkit
+* AWS CDK Toolkit 
 * Docker
 * CDKT
 * Kafka
@@ -44,6 +44,7 @@ cdk synth emits the synthesized CloudFormation template
 
 # You can also install modules individually
 
+npm install -g aws-cdk
 npm install --save @aws-cdk/aws-apigateway
 npm install --save  @aws-cdk/aws-lambda
 npm install --save  @aws-cdk/aws-dynamodb
