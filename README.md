@@ -11,6 +11,8 @@ You will need the following tools:
 * Terraform
 * AWS Account and User
 * AWS CLI
+* AWS SAM
+* Git
 * NodeJS Typescript
 * AWS CDK Toolkit 
 * Docker
