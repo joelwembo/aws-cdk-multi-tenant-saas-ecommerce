@@ -6,8 +6,6 @@ import * as secrets from 'aws-cdk-lib/aws-secretsmanager';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as nodejs from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as cr from 'aws-cdk-lib/custom-resources';
-// import * as path from "path";
-// import * as fs from "fs";
 
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
@@ -150,34 +148,34 @@ export class AwsCloudappStack extends Stack {
     })
 
     // Instantiate new db with user and permissions also add table.
-    const instantiate = createResolver('instantiate', 'src/instantiate.ts');
-    instantiate.node.addDependency(rdsInstance);
+    // const instantiate = createResolver('instantiate', 'src/instantiate.ts');
+    // instantiate.node.addDependency(rdsInstance);
 
-      // Lambda function for adding a book in the RDS table.
-      const addBook = createResolver('add-book', 'src/addBook.ts');
-      addBook.node.addDependency(rdsInstance);
+    //   // Lambda function for adding a book in the RDS table.
+    //   const addBook = createResolver('add-book', 'src/addBook.ts');
+    //   addBook.node.addDependency(rdsInstance);
   
-      // Lambda function for gettings books in the RDS table.
-      const getBooks = createResolver('get-books', 'src/getBooks.ts');
-      getBooks.node.addDependency(rdsInstance);
+    //   // Lambda function for gettings books in the RDS table.
+    //   const getBooks = createResolver('get-books', 'src/getBooks.ts');
+    //   getBooks.node.addDependency(rdsInstance);
   
-      // Custom Resource to execute instantiate function.
-      const customResource = new cr.AwsCustomResource(this, 'TriggerInstantiate', {
-        functionName: 'trigger-instantiate',
-        role,
-        onUpdate: {
-          service: 'Lambda',
-          action: 'invoke',
-          parameters: {
-            FunctionName: instantiate.functionName,
-          },
-          physicalResourceId: cr.PhysicalResourceId.of('TriggerInstantiate'),
-        },
-        policy: cr.AwsCustomResourcePolicy.fromSdkCalls({
-          resources: [instantiate.functionArn],
-        }),
-      });
-      customResource.node.addDependency(instantiate)
+    //   // Custom Resource to execute instantiate function.
+    //   const customResource = new cr.AwsCustomResource(this, 'TriggerInstantiate', {
+    //     functionName: 'trigger-instantiate',
+    //     role,
+    //     onUpdate: {
+    //       service: 'Lambda',
+    //       action: 'invoke',
+    //       parameters: {
+    //         FunctionName: instantiate.functionName,
+    //       },
+    //       physicalResourceId: cr.PhysicalResourceId.of('TriggerInstantiate'),
+    //     },
+    //     policy: cr.AwsCustomResourcePolicy.fromSdkCalls({
+    //       resources: [instantiate.functionArn],
+    //     }),
+    //   });
+    //   customResource.node.addDependency(instantiate)
 
     // DynamoDB Database Table Provisionning
     const database = new SwnDatabase(this, 'Database');    
