@@ -19,12 +19,12 @@ You will need the following tools:
 * Postman
 
 ## Useful commands
-npm run build compile typescript to js
-npm run watch watch for changes and compile
-npm run test perform the jest unit tests
-cdk deploy deploy this stack to your default AWS account/region
-cdk diff compare deployed stack with current state
-cdk synth emits the synthesized CloudFormation template
+- npm run build compile typescript to js
+- npm run watch watch for changes and compile
+- npm run test perform the jest unit tests
+- cdk deploy deploy this stack to your default AWS account/region
+- cdk diff compare deployed stack with current state
+- cdk synth emits the synthesized CloudFormation template
 
 ## Deploy to AWS 
 
@@ -44,10 +44,10 @@ cdk synth emits the synthesized CloudFormation template
 
 # You can also install modules individually
 
-npm install -g aws-cdk
-npm install --save @aws-cdk/aws-apigateway
-npm install --save  @aws-cdk/aws-lambda
-npm install --save  @aws-cdk/aws-dynamodb
+- npm install -g aws-cdk
+- npm install --save @aws-cdk/aws-apigateway
+- npm install --save  @aws-cdk/aws-lambda
+- npm install --save  @aws-cdk/aws-dynamodb
 
 ## AWS Codepipeline
 ![image](https://github.com/joelwembo/aws-cdk-infra-poc-1/assets/19718580/d97d25fc-76f1-4804-be0f-ea95a9d2a7fc)
