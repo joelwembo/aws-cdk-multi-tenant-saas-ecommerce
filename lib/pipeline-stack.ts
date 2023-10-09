@@ -204,7 +204,7 @@ export class CicdPipelineStack extends cdk.Stack {
 
 
     //example resource
-    // const queue = new sqs.Queue(this, 'ProdxcloudAwsCdkQueue', {
+    // const queue = new sqs.Queue(this, 'CloudappAwsCdkQueue', {
     //   visibilityTimeout: cdk.Duration.seconds(300)
     // });
 

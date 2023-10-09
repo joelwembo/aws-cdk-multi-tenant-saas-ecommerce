@@ -4,13 +4,13 @@
   "bin": {
     "aws-microservices": "bin/aws-microservices.js"
   },
-  "author": "Joel Otepa Wembo",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"
   },
+  "author" : "Joel wembo",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.114",
     "@types/jest": "^26.0.10",
