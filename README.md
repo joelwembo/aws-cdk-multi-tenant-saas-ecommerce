@@ -93,5 +93,34 @@ arn:aws:cloudformation:ap-southeast-1:xxxxxxxxxx:stack/AwsCloudappStack/f5adca00
 - How to Setup SAM & Cloud Formation : https://medium.com/@joelotepawembo/how-to-build-lambda-based-rest-api-entirely-through-code-api-gateway-sam-terraform-b9c83d76ea1c
 - AWS CDK Restful APIs with Typescript API Gateway DynamoDB: https://medium.com/@joelotepawembo/aws-cdk-restful-apis-using-api-gateway-lambda-rds-postgresql-dynamodb-vpc-codepipeline-and-cbb61a6ee0b3
  
+## Terraform Service Provisionning using CDKTF
+ 
 
+## Kubernetes cluster using cdk8s
+npm run compile && cdk8s synth
 
+Synthesizing application
+  - dist/kubernetes.k8s.yaml
+========================================================================================================
+
+ Your cdk8s typescript project is ready!
+
+   cat help         Print this message
+
+  Compile:
+   npm run compile     Compile typescript code to javascript (or "yarn watch")
+   npm run watch       Watch for changes and compile typescript in the background
+   npm run build       Compile + synth
+
+  Synthesize:
+   npm run synth       Synthesize k8s manifests from charts to dist/ (ready for 'kubectl apply -f')
+
+ Deploy:
+   kubectl apply -f dist/
+
+ Upgrades:
+   npm run import        Import/update k8s apis (you should check-in this directory)
+   npm run upgrade       Upgrade cdk8s modules to latest version
+   npm run upgrade:next  Upgrade cdk8s modules to latest "@next" version (last commit)
+
+========================================================================================================
