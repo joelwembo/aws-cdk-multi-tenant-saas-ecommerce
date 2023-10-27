@@ -1,9 +1,8 @@
 # AWS CDK Multi-Tenant SaaS E-Commerce Application  using API Gateway, Lambda, RDS PostgreSQL, DynamoDB, VPC, Codepipeline and Terraform
 
-This Proof of Concept is about a Restful APIs using AWS CDK  Infrastructure  with Terraform , CloudFormation, VPC, Typescript, DynamoDB, PostgreSQL, AWS EventBridge,  AWS CodePipeline, AWS SQS/SNS, Kafka and API Gateway.
+This Proof of Concept is about a multi tenant microservices ecommerce application using AWS CDK  Infrastructure  with Terraform , CloudFormation, VPC, Typescript, DynamoDB, PostgreSQL, AWS EventBridge,  AWS CodePipeline, AWS SQS/SNS, Kafka and API Gateway.
 ![architecture-1](https://github.com/joelwembo/aws-cdk-infra-poc-1/assets/19718580/ccb09c1a-5cec-4eea-b8cc-22a94f3b82e9)
                                    AWS CDK Serverless Microservices Architecture
-
 
 ## Tools
 You will need the following tools:
@@ -70,23 +69,6 @@ You will need the following tools:
 # Get API gateway
 
 aws apigateway get-api-key --api-key API_KEY_ID --include-value
-
-# OutPut Report / Result
-
-✨  Deployment time: 96.82s
-
-Outputs: AwsCloudappStack
-
-- AwsCloudappStack.ApiGatewaybasketApiEndpointEA878E69 = https://u1jtnat30j.execute-api.ap-southeast-1.amazonaws.com/prod/
-
-- AwsCloudappStack.ApiGatewayorderApiEndpointAA9C4874 = https://rjx12rx44h.execute-api.ap-southeast-1.amazonaws.com/prod/
-
-- AwsCloudappStack.ApiGatewayproductApiEndpoint84A1AEAC = https://6ajn8nqb08.execute-api.ap-southeast-1.amazonaws.com/prod/
-
-Stack ARN:
-arn:aws:cloudformation:ap-southeast-1:xxxxxxxxxx:stack/AwsCloudappStack/f5adca00-61e0-11ee-a748-028014dc3484
-
-✨  Total time: 137.35s
 
 
 ## Kubernetes cluster using cdk8s
