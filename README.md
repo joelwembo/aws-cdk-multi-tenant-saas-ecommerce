@@ -88,12 +88,6 @@ arn:aws:cloudformation:ap-southeast-1:xxxxxxxxxx:stack/AwsCloudappStack/f5adca00
 
 ✨  Total time: 137.35s
 
-# Fore more information Read:
- 
-- How to Setup SAM & Cloud Formation : https://medium.com/@joelotepawembo/how-to-build-lambda-based-rest-api-entirely-through-code-api-gateway-sam-terraform-b9c83d76ea1c
-- AWS CDK Restful APIs with Typescript API Gateway DynamoDB: https://medium.com/@joelotepawembo/aws-cdk-restful-apis-using-api-gateway-lambda-rds-postgresql-dynamodb-vpc-codepipeline-and-cbb61a6ee0b3
-## Terraform Service Provisionning using CDKTF
- 
 
 ## Kubernetes cluster using cdk8s
 npm run compile && cdk8s synth
@@ -123,3 +117,9 @@ Synthesizing application
    npm run upgrade:next  Upgrade cdk8s modules to latest "@next" version (last commit)
 
 ========================================================================================================
+
+# Fore more information Read:
+ 
+- How to Build Lambda based REST API entirely through code — API Gateway, SAM & Terraform : https://medium.com/@joelotepawembo/how-to-build-lambda-based-rest-api-entirely-through-code-api-gateway-sam-terraform-b9c83d76ea1c
+
+- AWS CDK multi-tenant SaaS application using API Gateway, Lambda, DynamoDB and Codepipeline: https://medium.com/@joelotepawembo/aws-cdk-restful-apis-using-api-gateway-lambda-rds-postgresql-dynamodb-vpc-codepipeline-and-cbb61a6ee0b3
