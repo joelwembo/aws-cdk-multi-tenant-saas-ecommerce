@@ -105,3 +105,9 @@ Synthesizing application
 - How to Build Lambda based REST API entirely through code — API Gateway, SAM & Terraform : https://medium.com/@joelotepawembo/how-to-build-lambda-based-rest-api-entirely-through-code-api-gateway-sam-terraform-b9c83d76ea1c
 
 - AWS CDK multi-tenant SaaS application using API Gateway, Lambda, DynamoDB and Codepipeline: https://medium.com/@joelotepawembo/aws-cdk-restful-apis-using-api-gateway-lambda-rds-postgresql-dynamodb-vpc-codepipeline-and-cbb61a6ee0b3
+
+Author : Joel O. Wembo
+LinkedIn: https://www.linkedin.com/in/joelotepawembo/
+Twitter: https://twitter.com/joelwembo1
+Email: joelwembo@outlook.com
+Website: https://joelwembo.com
